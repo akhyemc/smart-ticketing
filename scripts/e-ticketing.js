@@ -28,7 +28,7 @@ function buyTickets(){
   
       const selectedSeatContainer = document.getElementById('selected-seat-container');
       const li = document.createElement('li');
-      li.className = 'flex justify-between items-center gap-32 text-xl font-semibold';
+      li.className = 'flex justify-between items-center gap-4 lg:gap-32 text-xl font-semibold';
       const p = document.createElement('p');
       p.innerText = currentSeat;
       const p2 = document.createElement('p');
