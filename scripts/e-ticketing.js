@@ -26,7 +26,7 @@ for(const seat of seats){
 
       const selectedSeatContainer = document.getElementById('selected-seat-container');
       const li = document.createElement('li');
-      li.className = 'flex justify-between items-center gap-36 text-xl font-semibold';
+      li.className = 'flex justify-between items-center gap-28 text-xl font-semibold';
       const p = document.createElement('p');
       p.innerText = currentSeat;
       const p2 = document.createElement('p');
@@ -109,11 +109,11 @@ function applyCoupon(){
       applyButton.classList.remove('pointer-events-none', 'disabled');
       applyButton.classList.add('bg-lime-400', 'text-white');
       applyButton.disabled = false;
-    } else{
+    } 
+    else{
       applyButton.classList.remove('bg-lime-400', 'text-white');
       applyButton.classList.add('pointer-events-none', 'disabled');
       applyButton.disabled = true;
-      alert('Sorry!! You have applied invalid coupon. Enter valid coupon code.');
     }
   });
 }
